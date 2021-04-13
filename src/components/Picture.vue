@@ -19,4 +19,15 @@ picture img{
   width: 250px;
   height: 230px;
 }
+
+@media (max-width: 740px) {
+  picture{
+    display: flex;
+    align-items: center;
+  }
+  picture img{
+    width: 150px;
+    height: 130px;
+  }
+}
 </style>
