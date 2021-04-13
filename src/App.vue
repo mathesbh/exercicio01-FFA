@@ -1,16 +1,27 @@
 <template>
-  <Header />
+<div class='container'>
+  <header>
+    <Header />
+  </header>
+  <nav>
+    <Navbar />
+  </nav>
+
+</div>
+  
   
 </template>
 
 <script>
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 export default {
 
   name: 'App',
   components:{
     Header,
+    Navbar,
   },
 }
 </script>
