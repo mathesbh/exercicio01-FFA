@@ -8,11 +8,7 @@
   </nav>
   <main class='wrapper'>
       <Article />
-  
-    <aside>
-      
-    </aside>
-
+      <Aside :items="sections"/>
   </main>
 
 </div>
@@ -24,6 +20,7 @@
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Article from './components/Article';
+import Aside from './components/Aside';
 
 export default {
 
@@ -32,7 +29,14 @@ export default {
     Header,
     Navbar,
     Article,
+    Aside,
   },
+  data(){
+    return {
+      sections: ['Section 1', 'Section 2', 'Section 3', 'Section 4', 'Section 5', 'Section 6', 'Section 7', 'Section 8', 'Section 9', 'Section 10', 'Section 11', 'Section 12']
+    }
+  }
+  
 }
 </script>
 
